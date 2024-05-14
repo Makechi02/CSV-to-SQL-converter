@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.makbe.converter.UI.MainController">
+    <Label alignment="CENTER" layoutX="14.0" layoutY="51.0" prefHeight="40.0" prefWidth="574.0" text="CSV to SQL Converter" wrapText="true">
+        <font>
+          <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+
+    <Label layoutX="26.0" layoutY="134.0" prefHeight="40.0" text="CSV file Path:" />
+    <TextField fx:id="filePathField" layoutX="129.0" layoutY="134.0" prefHeight="40.0" prefWidth="443.0" />
+    <Button layoutX="250.0" layoutY="188.0" mnemonicParsing="false" onAction="#browseCsvFile" text="Browse Files" />
+    <HBox alignment="CENTER" layoutX="14.0" layoutY="262.0" prefHeight="40.0" prefWidth="574.0" spacing="10.0">
+        <Button mnemonicParsing="false" onAction="#generateSqlFile" text="Generate SQL" />
+        <Button mnemonicParsing="false" onAction="#populateDatabase" text="Populate Database Table" />
+    </HBox>
+</AnchorPane>
